@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="240.0" prefWidth="360.0" styleClass="popupWindowPane" stylesheets="@../login/LoginStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.JoinClassroomFXMLController">
+   <children>
+      <TextField fx:id="codeField" layoutX="65.0" layoutY="67.0" prefHeight="35.0" prefWidth="230.0" promptText="Classroom Code" styleClass="txtFields" stylesheets="@../login/LoginStyle.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="joinButton" buttonType="RAISED" layoutX="130.0" layoutY="147.0" onAction="#joinButtonPushed" prefHeight="40.0" prefWidth="100.0" styleClass="popupWindowButton" stylesheets="@../login/LoginStyle.css" text="Join">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="codeError" layoutX="75.0" layoutY="110.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

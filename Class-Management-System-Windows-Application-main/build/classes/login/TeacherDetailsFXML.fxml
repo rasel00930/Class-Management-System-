@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.TeacherDetailsFXMLController">
+   <children>
+      <Label alignment="CENTER" layoutX="145.0" layoutY="39.0" prefHeight="57.0" prefWidth="670.0" text="You're Almost Done! Just Give Some Personal Details!" textFill="#019094">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstNameField" layoutX="73.0" layoutY="140.0" prefHeight="50.0" prefWidth="340.0" promptText="   First Name" styleClass="txtFields" stylesheets="@LoginStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="lastNameField" layoutX="73.0" layoutY="230.0" prefHeight="50.0" prefWidth="340.0" promptText="   Last Name" styleClass="txtFields" stylesheets="@LoginStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="institutionField" layoutX="73.0" layoutY="320.0" prefHeight="50.0" prefWidth="340.0" promptText="   Institution" styleClass="txtFields" stylesheets="@LoginStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="departmentField" layoutX="527.0" layoutY="140.0" prefHeight="50.0" prefWidth="340.0" promptText="   Department" styleClass="txtFields" stylesheets="@LoginStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="designationField" layoutX="527.0" layoutY="230.0" prefHeight="50.0" prefWidth="340.0" promptText="   Designation" styleClass="txtFields" stylesheets="@LoginStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="contactNoField" layoutX="527.0" layoutY="320.0" prefHeight="50.0" prefWidth="340.0" promptText="   Contact No" styleClass="txtFields" stylesheets="@LoginStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label fx:id="alertText" layoutX="404.0" layoutY="402.0" text="All fields must be filled" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="283.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="doneButton" buttonType="RAISED" layoutX="420.0" layoutY="441.0" onAction="#doneButtonPushed" prefHeight="50.0" prefWidth="120.0" styleClass="teacherDetailsDoneButton" stylesheets="@LoginStyle.css" text="Done!">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

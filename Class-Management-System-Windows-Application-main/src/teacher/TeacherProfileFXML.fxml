@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.TeacherProfileFXMLController">
+   <children>
+      <Label alignment="CENTER" layoutX="405.0" layoutY="13.0" text="Profile" textFill="#019094">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="133.0" layoutY="115.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" editable="false" layoutX="230.0" layoutY="110.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@TeacherProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="82.0" layoutY="185.0" text="Institution:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="institutionField" editable="false" layoutX="230.0" layoutY="180.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@TeacherProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="62.0" layoutY="253.0" text="Department:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="departmentField" editable="false" layoutX="230.0" layoutY="250.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@TeacherProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="219.0" layoutY="309.0" />
+      <Label layoutX="69.0" layoutY="395.0" text="Contact No:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="contactNoField" editable="false" layoutX="230.0" layoutY="390.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@TeacherProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <JFXButton fx:id="editButton" buttonType="RAISED" layoutX="798.0" layoutY="280.0" onAction="#editButtonPushed" prefHeight="45.0" prefWidth="100.0" styleClass="editButton" stylesheets="@TeacherProfileStyle.css" text="Edit">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="20.0" layoutY="20.0" onAction="#backButtonPushed" prefHeight="45.0" prefWidth="100.0" styleClass="backButton" stylesheets="@TeacherProfileStyle.css" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+      <TextField fx:id="emailField" editable="false" layoutX="230.0" layoutY="460.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@TeacherProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="136.0" layoutY="465.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="savedText" layoutX="823.0" layoutY="350.0" text="Saved!" textFill="#019094">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="designationField" editable="false" layoutX="230.0" layoutY="320.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@TeacherProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="65.0" layoutY="325.0" text="Designation:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

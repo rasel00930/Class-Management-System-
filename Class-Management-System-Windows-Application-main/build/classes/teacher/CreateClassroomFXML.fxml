@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="240.0" prefWidth="360.0" styleClass="popupWindowPane" stylesheets="@../login/LoginStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.CreateClassroomFXMLController">
+   <children>
+      <JFXButton fx:id="createButton" buttonType="RAISED" layoutX="130.0" layoutY="177.0" onAction="#createButtonPushed" prefHeight="40.0" prefWidth="100.0" styleClass="popupWindowButton" stylesheets="@../login/LoginStyle.css" text="Create">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="classroomNameField" layoutX="65.0" layoutY="37.0" prefHeight="35.0" prefWidth="230.0" promptText="Classroom Name" styleClass="txtFields" stylesheets="@../login/LoginStyle.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="courseNameField" layoutX="65.0" layoutY="110.0" prefHeight="35.0" prefWidth="230.0" promptText="Course Name" styleClass="txtFields" stylesheets="@../login/LoginStyle.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="classroomNameError" layoutX="74.0" layoutY="72.0" text="Classroom name empty!" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="courseNameError" layoutX="74.0" layoutY="145.0" text="Course name empty!" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

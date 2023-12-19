@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="240.0" prefWidth="360.0" styleClass="popupWindowPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.PassRecoveryFXML2Controller">
+    <stylesheets>
+        <URL value="@LoginStyle.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="passConditionText1" layoutX="58.0" layoutY="70.0" text="Password must be at least 6 characters" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="passConditionText2" layoutX="58.0" layoutY="87.0" text="Password must contain both letter and number" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="passConditionText3" layoutX="58.0" layoutY="154.0" text="Passwords must match" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <JFXButton fx:id="confirmButton" buttonType="RAISED" layoutX="135.0" layoutY="186.0" onAction="#confirmButton" prefHeight="35.0" prefWidth="90.0" styleClass="popupWindowButton" stylesheets="@LoginStyle.css" text="Confirm">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <PasswordField fx:id="newPassField" layoutX="50.0" layoutY="35.0" onKeyReleased="#newPassFieldAction" prefHeight="35.0" prefWidth="260.0" promptText="New Password" styleClass="txtFields" stylesheets="@LoginStyle.css">
+         <font>
+            <Font size="15.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="confirmPassField" layoutX="50.0" layoutY="120.0" onKeyReleased="#confirmPassFieldAction" prefHeight="35.0" prefWidth="260.0" promptText="Confirm Password" styleClass="txtFields" stylesheets="@LoginStyle.css">
+         <font>
+            <Font size="15.0" />
+         </font></PasswordField>
+   </children>
+</AnchorPane>

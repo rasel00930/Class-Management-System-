@@ -1,0 +1,17 @@
+.textFields{
+    -fx-background-radius: 30;
+}
+
+.editButton{
+    -fx-background-radius: 300;
+    -fx-text-fill: white;
+    -fx-background-color: #019094;
+    -fx-text-alignment: center;
+}
+
+.backButton{
+    -fx-background-radius: 300;
+    -fx-text-fill: white;
+    -fx-background-color: #019094;
+    -fx-text-alignment: center;
+}

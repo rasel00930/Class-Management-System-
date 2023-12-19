@@ -1,0 +1,22 @@
+.table-view{
+    -fx-background-color: #c2e8e9;
+    -fx-background-radius: 20;
+    -fx-font-size: 16px;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #019094;
+    -fx-background-radius: 20;
+}
+
+.table-view .column-header, .table-view.filler{
+    -fx-size: 40;
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 20
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}

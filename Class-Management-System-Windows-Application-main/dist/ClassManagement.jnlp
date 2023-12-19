@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ClassManagement.jnlp">
+  <information>
+    <title>ClassManagement</title>
+    <vendor>monim</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ClassManagement.jar" size="376189" download="eager" />
+    <jar href="lib\activation.jar" size="55147" download="eager" />
+    <jar href="lib\fontawesomefx-8.1.jar" size="179086" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2211776" download="eager" />
+    <jar href="lib\mail.jar" size="462098" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.23.jar" size="2415211" download="eager" />
+    <jar href="lib\org-apache-commons-codec.jar" size="46739" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="login.ClassManagement"  name="ClassManagement" />
+  <update check="always"/>
+</jnlp>

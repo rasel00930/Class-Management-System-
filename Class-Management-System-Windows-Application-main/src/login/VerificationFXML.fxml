@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="240.0" prefWidth="360.0" styleClass="popupWindowPane" stylesheets="@LoginStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.VerificationFXMLController">
+   <children>
+      <TextField fx:id="signUpOTPField" layoutX="65.0" layoutY="103.0" prefHeight="35.0" prefWidth="230.0" promptText="Enter 6-Digit Verification Code" styleClass="txtFields" stylesheets="@LoginStyle.css">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <JFXButton fx:id="confirmButton" buttonType="RAISED" layoutX="130.0" layoutY="169.0" onAction="#confirmButton" prefHeight="40.0" prefWidth="100.0" styleClass="popupWindowButton" stylesheets="@LoginStyle.css" text="Confirm">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label layoutX="31.0" layoutY="27.0" prefHeight="25.0" prefWidth="298.0" text="You have been sent a verification code">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="59.0" prefHeight="25.0" prefWidth="184.0" text="Please check your Email">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="codeError" layoutX="80.0" layoutY="135.0" prefHeight="20.0" prefWidth="150.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

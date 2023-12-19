@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.TeacherExamMarksFXMLController">
+   <children>
+      <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="20.0" layoutY="20.0" onAction="#backButtonPushed" prefHeight="45.0" prefWidth="100.0" styleClass="backButton" stylesheets="@TeacherDashboardStyle.css" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="366.0" layoutY="20.0" text="Exam Marks" textFill="#019094">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <TableView fx:id="marksTable" layoutX="30.0" layoutY="105.0" prefHeight="420.0" prefWidth="600.0" stylesheets="@TableStyle.css">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="130.0" resizable="false" text="Student ID" />
+            <TableColumn fx:id="nameColumn" minWidth="0.0" prefWidth="220.0" resizable="false" sortable="false" text="Name" />
+            <TableColumn fx:id="marksColumn" prefWidth="120.0" text="Marks" />
+            <TableColumn fx:id="convertedMarksColumn" prefWidth="130.0" text="Converted Marks" />
+         </columns>
+      </TableView>
+      <TextField fx:id="examNameField" alignment="CENTER" layoutX="721.0" layoutY="166.0" prefHeight="40.0" prefWidth="160.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="marksField" alignment="CENTER" layoutX="747.0" layoutY="406.0" prefHeight="40.0" prefWidth="110.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="totalMarksField" alignment="CENTER" layoutX="747.0" layoutY="246.0" prefHeight="40.0" prefWidth="110.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="convertedTotalMarksField" alignment="CENTER" layoutX="747.0" layoutY="326.0" prefHeight="40.0" prefWidth="110.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="745.0" layoutY="139.0" text="Exam Name:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="773.0" layoutY="379.0" text="Marks:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="748.0" layoutY="219.0" text="Total Marks:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="699.0" layoutY="299.0" text="Converted Total Marks:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="submitButton" buttonType="RAISED" layoutX="840.0" layoutY="20.0" onAction="#submitButtonPushed" prefHeight="45.0" prefWidth="100.0" styleClass="backButton" stylesheets="@TeacherDashboardStyle.css" text="Publish">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="doneButton" buttonType="RAISED" layoutX="762.0" layoutY="456.0" onAction="#doneButtonPushed" prefHeight="35.0" prefWidth="80.0" styleClass="backButton" stylesheets="@TeacherDashboardStyle.css" text="Done">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="submitedText" layoutX="855.0" layoutY="78.0" text="Published!" textFill="#019094">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorText" layoutX="665.0" layoutY="504.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

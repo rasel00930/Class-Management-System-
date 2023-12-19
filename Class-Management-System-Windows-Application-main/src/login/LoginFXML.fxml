@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" styleClass="runningPane" stylesheets="@LoginStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginFXMLController">
+    <children>
+        <AnchorPane fx:id="rightPane" layoutX="360.0" prefHeight="540.0" prefWidth="600.0" styleClass="runningPane" stylesheets="@LoginStyle.css">
+            <children>
+            <PasswordField fx:id="passSignInField" layoutX="126.0" layoutY="250.0" prefHeight="50.0" prefWidth="350.0" promptText="Password" styleClass="txtFields" stylesheets="@LoginStyle.css">
+                <font>
+                   <Font size="18.0" />
+                </font>
+            </PasswordField>
+            <JFXButton fx:id="signInButton" buttonType="RAISED" layoutX="225.0" layoutY="420.0" onAction="#signInButtonPushed" prefHeight="55.0" prefWidth="150.0" styleClass="signUpButton" stylesheets="@LoginStyle.css" text="Sign In">
+                <font>
+                   <Font name="System Bold" size="20.0" />
+                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <TextField fx:id="emailSignInField" layoutX="125.0" layoutY="165.0" prefHeight="50.0" prefWidth="350.0" promptText="Email" styleClass="txtFields" stylesheets="@LoginStyle.css">
+                <font>
+                   <Font size="18.0" />
+                </font>
+            </TextField>
+            <Label fx:id="signInText" alignment="CENTER" layoutX="146.0" layoutY="45.0" prefHeight="50.0" prefWidth="311.0" text="Sign in to Classroom" textOverrun="CLIP">
+                <font>
+                   <Font name="System Bold" size="32.0" />
+                </font>
+            </Label>
+            <Hyperlink fx:id="forgotPassword" focusTraversable="false" layoutX="341.0" layoutY="310.0" onAction="#forgotPasswordClicked" styleClass="hyperlinkForgotPass" stylesheets="@LoginStyle.css" text="Forgot Password?" visited="true">
+                <font>
+                   <Font name="System Bold" size="15.0" />
+                </font>
+            </Hyperlink>
+            <Label fx:id="signInError" layoutX="138.0" layoutY="362.0" prefHeight="20.0" prefWidth="232.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="signUpText" alignment="CENTER" layoutX="167.0" layoutY="30.0" prefHeight="50.0" prefWidth="244.0" text="Create Account">
+                   <font>
+                      <Font name="System Bold" size="32.0" />
+                   </font>
+            </Label>
+            <TextField fx:id="emailSignUpField" layoutX="125.0" layoutY="100.0" onKeyReleased="#emailSignUpFieldAction" prefHeight="50.0" prefWidth="350.0" promptText="Email" styleClass="txtFields" stylesheets="@LoginStyle.css">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Label fx:id="passConditionText1" layoutX="138.0" layoutY="245.0" text="Password must be at least 6 characters" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <JFXButton fx:id="signUpButton" buttonType="RAISED" layoutX="225.0" layoutY="440.0" onAction="#signUpButtonPushed" prefHeight="55.0" prefWidth="150.0" styleClass="signUpButton" stylesheets="@LoginStyle.css" text="Sign Up">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label fx:id="passConditionText2" layoutX="138.0" layoutY="265.0" text="Password must contain both letter and number" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passSignUpField" layoutX="125.0" layoutY="190.0" onKeyReleased="#passSignUpFieldAction" prefHeight="50.0" prefWidth="350.0" promptText="Password" styleClass="txtFields" stylesheets="@LoginStyle.css">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="confirmPassField" layoutX="125.0" layoutY="300.0" onKeyReleased="#confirmPassFieldAction" prefHeight="50.0" prefWidth="350.0" promptText="Confirm Password" styleClass="txtFields" stylesheets="@LoginStyle.css">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="passConditionText3" layoutX="138.0" layoutY="352.0" text="Passwords must match" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="isTeacherRB" layoutX="143.0" layoutY="400.0" mnemonicParsing="false" onAction="#isTeacherRBSelected" prefHeight="22.0" prefWidth="90.0" text="Teacher">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggleTS" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="isStudentRB" layoutX="376.0" layoutY="400.0" mnemonicParsing="false" onAction="#isStudentRBSelected" prefHeight="22.0" prefWidth="90.0" text="Student" toggleGroup="$toggleTS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <Label fx:id="accTypeText" layoutX="210.0" layoutY="375.0" text="Account type not selected!" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailErrorText" layoutX="138.0" layoutY="155.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            </children>
+      </AnchorPane>
+      <AnchorPane fx:id="runningBar" prefHeight="540.0" prefWidth="360.0" styleClass="runningBar" stylesheets="@LoginStyle.css">
+         <children>
+            <Label fx:id="welcomeText" alignment="CENTER" layoutX="64.0" layoutY="60.0" prefHeight="60.0" prefWidth="232.0" text="Welcome Back !" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="joinText" alignment="CENTER" layoutX="20.0" layoutY="65.0" prefHeight="50.0" prefWidth="320.0" text="Join to Enjoy Classroom" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="appIcon" fitHeight="206.0" fitWidth="186.0" layoutX="87.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/classroom.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="aboutUs" focusTraversable="false" layoutX="135.0" layoutY="490.0" onAction="#aboutUsClicked" styleClass="hyperlinkAboutUs" stylesheets="@LoginStyle.css" text="ABOUT US" visited="true">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Hyperlink>
+            <Button fx:id="slideSignInButton" layoutX="90.0" layoutY="380.0" mnemonicParsing="false" onAction="#slideSignIn" prefHeight="60.0" prefWidth="180.0" styleClass="slideButton" stylesheets="@LoginStyle.css" text="Sign In">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="slideSignUpButton" layoutX="90.0" layoutY="380.0" mnemonicParsing="false" onAction="#slideSignUp" prefHeight="60.0" prefWidth="180.0" styleClass="slideButton" stylesheets="@LoginStyle.css" text="Sign Up">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

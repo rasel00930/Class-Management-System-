@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="240.0" prefWidth="360.0" styleClass="popupWindowPane" stylesheets="@LoginStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.PassRecoveryFXMLController">
+   <children>
+      <TextField fx:id="recoveryEmailField" layoutX="16.0" layoutY="50.0" prefHeight="35.0" prefWidth="230.0" promptText="Enter Your Email" styleClass="txtFields" stylesheets="@LoginStyle.css">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <JFXButton fx:id="sendOTPButton" buttonType="RAISED" layoutX="261.0" layoutY="50.0" onAction="#sendOTPButtonPushed" prefHeight="35.0" prefWidth="88.0" styleClass="popupWindowButton" stylesheets="@LoginStyle.css" text="Send OTP">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <TextField fx:id="OTPField" layoutX="15.0" layoutY="149.0" prefHeight="35.0" prefWidth="230.0" promptText="Enter 6-Digit Verification Code" styleClass="txtFields" stylesheets="@LoginStyle.css">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <JFXButton fx:id="verifyButton" buttonType="RAISED" layoutX="258.0" layoutY="149.0" onAction="#verifyButtonPushed" prefHeight="35.0" prefWidth="88.0" styleClass="popupWindowButton" stylesheets="@LoginStyle.css" text="Verify">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label fx:id="emailError" layoutX="27.0" layoutY="100.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="codeError" layoutX="27.0" layoutY="197.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

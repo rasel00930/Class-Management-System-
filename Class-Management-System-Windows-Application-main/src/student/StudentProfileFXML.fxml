@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.StudentProfileFXMLController">
+   <children>
+      <Label alignment="CENTER" layoutX="405.0" layoutY="13.0" text="Profile" textFill="#019094">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="133.0" layoutY="105.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" editable="false" layoutX="230.0" layoutY="100.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@StudentProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="82.0" layoutY="165.0" text="Institution:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="institutionField" editable="false" layoutX="230.0" layoutY="160.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@StudentProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="62.0" layoutY="225.0" text="Department:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="departmentField" editable="false" layoutX="230.0" layoutY="220.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@StudentProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="219.0" layoutY="309.0" />
+      <Label layoutX="150.0" layoutY="285.0" text="Year:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="semesterField" editable="false" layoutX="580.0" layoutY="280.0" prefHeight="45.0" prefWidth="150.0" styleClass="textFields" stylesheets="@StudentProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="70.0" layoutY="405.0" text="Contact No:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="contactNoField" editable="false" layoutX="230.0" layoutY="400.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@StudentProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <JFXButton fx:id="editButton" buttonType="RAISED" layoutX="798.0" layoutY="280.0" onAction="#editButtonPushed" prefHeight="45.0" prefWidth="100.0" styleClass="editButton" stylesheets="@StudentProfileStyle.css" text="Edit">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="yearField" editable="false" layoutX="230.0" layoutY="280.0" prefHeight="45.0" prefWidth="150.0" styleClass="textFields" stylesheets="@StudentProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="444.0" layoutY="285.0" text="Semester:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="20.0" layoutY="20.0" onAction="#backButtonPushed" prefHeight="45.0" prefWidth="100.0" styleClass="backButton" stylesheets="@StudentProfileStyle.css" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+      <TextField fx:id="sectionField" editable="false" layoutX="230.0" layoutY="340.0" prefHeight="45.0" prefWidth="150.0" styleClass="textFields" stylesheets="@StudentProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="idField" editable="false" layoutX="580.0" layoutY="340.0" prefHeight="45.0" prefWidth="150.0" styleClass="textFields" stylesheets="@StudentProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="117.0" layoutY="345.0" text="Section:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="345.0" text="Student ID:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailField" editable="false" layoutX="230.0" layoutY="460.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@StudentProfileStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="136.0" layoutY="465.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="savedText" layoutX="823.0" layoutY="350.0" text="Saved!" textFill="#019094">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

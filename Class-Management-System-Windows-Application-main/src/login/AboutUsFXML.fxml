@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.AboutUsFXMLController">
+   <children>
+      <AnchorPane fx:id="upperPane" prefHeight="150.0" prefWidth="960.0" styleClass="runningBar" stylesheets="@LoginStyle.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="410.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/classroom.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="614.0" layoutY="40.0" text="TEAM" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="64.0" />
+               </font>
+            </Label>
+            <Label layoutX="175.0" layoutY="40.0" text="OUR" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="124.0" fitWidth="148.0" layoutX="63.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/profile.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="148.0" layoutX="289.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/profile.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="148.0" layoutX="523.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/profile.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="148.0" layoutX="754.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/profile.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="343.0" text="MD. Monim Hossain">
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="43.0" layoutY="368.0" text="Department of CSE">
+         <font>
+            <Font name="Bookman Old Style Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="343.0" text="MD. Shakir Mahmud">
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="271.0" layoutY="368.0" text="Department of CSE">
+         <font>
+            <Font name="Bookman Old Style Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="495.0" layoutY="343.0" text="Rakib Hasan Bappy">
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="505.0" layoutY="368.0" text="Department of CSE">
+         <font>
+            <Font name="Bookman Old Style Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="705.0" layoutY="343.0" text="Rafiur Rahman Siddiqui">
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="737.0" layoutY="368.0" text="Department of CSE">
+         <font>
+            <Font name="Bookman Old Style Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="439.0" text="Ahsanullah University of Science and Technology">
+         <font>
+            <Font name="Bookman Old Style Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="223.0" layoutY="479.0" text="Contact :  ">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="20.0" layoutY="475.0" onAction="#backButtonPushed" prefHeight="45.0" prefWidth="100.0" styleClass="backButton" stylesheets="@LoginStyle.css" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Hyperlink fx:id="link" layoutX="348.0" layoutY="474.0" onAction="#linkOnAction" styleClass="hyperlinkContact" stylesheets="@LoginStyle.css" text="classmanagements@gmail.com">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="24.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

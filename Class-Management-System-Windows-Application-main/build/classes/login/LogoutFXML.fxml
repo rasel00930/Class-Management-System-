@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="240.0" prefWidth="360.0" stylesheets="@LoginStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LogoutFXMLController">
+   <children>
+      <Label layoutX="52.0" layoutY="39.0" prefHeight="45.0" prefWidth="256.0" text="Do you want to log out?">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="yesButton" buttonType="RAISED" layoutX="62.0" layoutY="136.0" onAction="#yesButtonPushed" prefHeight="40.0" prefWidth="90.0" styleClass="popupWindowButton" stylesheets="@LoginStyle.css" text="Yes">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="noButton" buttonType="RAISED" layoutX="208.0" layoutY="136.0" onAction="#noButtonPushed" prefHeight="40.0" prefWidth="90.0" styleClass="popupWindowButton" stylesheets="@LoginStyle.css" text="No">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

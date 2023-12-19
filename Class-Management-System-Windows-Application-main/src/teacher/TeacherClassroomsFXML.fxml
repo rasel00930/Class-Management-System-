@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.TeacherClassroomsFXMLController">
+   <children>
+      <Label layoutX="266.0" layoutY="65.0" text="Select Classroom:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="classroomsDropdown" layoutX="475.0" layoutY="66.0" prefHeight="35.0" prefWidth="240.0" stylesheets="@TeacherDashboardStyle.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
+      <Label layoutX="50.0" layoutY="160.0" text="Classroom Code:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="classroomCodeField" alignment="CENTER" editable="false" layoutX="199.0" layoutY="154.0" prefHeight="40.0" prefWidth="110.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+      <Label layoutX="484.0" layoutY="162.0" text="Course Name:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="courseNameField" alignment="CENTER" editable="false" layoutX="610.0" layoutY="155.0" prefHeight="40.0" prefWidth="300.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+      <AnchorPane fx:id="attendanceIcon" layoutX="32.0" layoutY="290.0" prefHeight="200.0" prefWidth="200.0" styleClass="dashboardIconDesign" stylesheets="@TeacherDashboardStyle.css">
+         <children>
+            <ImageView fitHeight="109.0" fitWidth="121.0" layoutX="46.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/attendance.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="33.0" layoutY="140.0" text="Attendance">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane fx:id="examMarksIcon" layoutX="264.0" layoutY="290.0" prefHeight="200.0" prefWidth="200.0" styleClass="dashboardIconDesign" stylesheets="@TeacherDashboardStyle.css">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="131.0" layoutX="47.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/marks.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="140.0" text="Exam Marks">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane fx:id="announcementIcon" layoutX="496.0" layoutY="290.0" prefHeight="200.0" prefWidth="200.0" styleClass="dashboardIconDesign" stylesheets="@TeacherDashboardStyle.css">
+         <children>
+            <ImageView fitHeight="117.0" fitWidth="144.0" layoutX="42.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/announcements.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="140.0" text="Announcement">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="20.0" layoutY="20.0" onAction="#backButtonPushed" prefHeight="45.0" prefWidth="100.0" styleClass="backButton" stylesheets="@TeacherDashboardStyle.css" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane fx:id="studentsIcon" layoutX="728.0" layoutY="290.0" prefHeight="200.0" prefWidth="200.0" styleClass="dashboardIconDesign" stylesheets="@TeacherDashboardStyle.css">
+         <children>
+            <ImageView fitHeight="117.0" fitWidth="144.0" layoutX="42.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/students.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="50.0" layoutY="140.0" text="Students">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+.TitlePane{
+    -fx-background-color: #019094;
+}
+
+.dashboardIconDesign{
+    -fx-background-color: #d6d6c2;
+    -fx-background-radius: 30;
+}
+
+.dashboardIconDesign:hover{
+    -fx-background-color: #019094;
+}
+
+.logoutButton{
+    -fx-background-radius: 300;
+    -fx-text-fill: white;
+    -fx-background-color: #019094;
+    -fx-text-alignment: center;
+}
+
+.backButton{
+    -fx-background-radius: 300;
+    -fx-text-fill: white;
+    -fx-background-color: #019094;
+    -fx-text-alignment: center;
+}
+
+.textFields{
+    -fx-background-radius: 30;
+}
+
+.choice-box .context-menu{
+    -fx-background-color: #c2e8e9;
+}
+
+.choice-box .menu-item:focused{
+    -fx-background-color: #019094;
+}
+
+.choice-box .menu-item > .label{
+    -fx-text-fill: black;
+    -fx-font-size: 18px;
+}
+
+.choice-box .menu-item:focused > .label{
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+.choice-box{
+    -fx-background-color: #019094;
+    -fx-mark-color: white;
+    -fx-background-radius: 20;
+}
+
+.choice-box > .label{
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.date-picker > .text-field {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}

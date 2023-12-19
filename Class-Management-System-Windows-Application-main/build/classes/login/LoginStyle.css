@@ -1,0 +1,78 @@
+.runningBar{
+    -fx-background-color: #019094;
+}
+.runningPane{
+    -fx-background-color: white;
+}
+.signUpButton{
+    -fx-background-radius: 300;
+    -fx-text-fill: white;
+    -fx-background-color: #019094;
+    -fx-text-alignment: center;
+}
+
+.slideButton{
+    -fx-background-radius: 50;
+    -fx-text-fill: #019094;
+    -fx-background-color: white;
+    -fx-text-alignment: center;
+}
+
+.slideButton:hover{
+    -fx-text-fill: #019094;
+    -fx-background-color: #c2e8e9;
+}
+
+.txtFields{
+    -fx-background-radius: 50;
+}
+
+.popupWindowButton{
+    -fx-background-radius: 50;
+    -fx-text-fill: white;
+    -fx-background-color: #019094;
+    -fx-text-alignment: center;
+}
+
+.popupWindowPane{
+    -fx-background-color: white;
+}
+
+.hyperlinkAboutUs{
+    -fx-text-fill: #c2e8e9;
+}
+
+.hyperlinkAboutUs:hover{
+    -fx-text-fill: whitesmoke;
+}
+
+.hyperlinkForgotPass{
+    -fx-text-fill: black;
+}
+
+.hyperlinkForgotPass:hover{
+    -fx-text-fill: #019094;
+}
+
+.teacherDetailsDoneButton{
+    
+    -fx-background-radius: 50;
+    -fx-text-fill: white;
+    -fx-background-color: #019094;
+    -fx-text-alignment: center;
+}
+
+.backButton{
+    -fx-background-radius: 300;
+    -fx-text-fill: white;
+    -fx-background-color: #019094;
+    -fx-text-alignment: center;
+}
+
+.hyperlinkContact{
+    -fx-text-fill: #006666;
+}
+
+.hyperlinkContact:hover{
+    -fx-text-fill: #019094;
+}

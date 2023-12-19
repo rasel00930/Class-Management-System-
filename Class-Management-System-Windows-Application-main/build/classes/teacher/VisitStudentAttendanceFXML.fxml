@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.VisitStudentAttendanceFXMLController">
+   <children>
+      <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="20.0" layoutY="20.0" onAction="#backButtonPushed" prefHeight="45.0" prefWidth="100.0" styleClass="backButton" stylesheets="@TeacherDashboardStyle.css" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="attendanceTable" layoutX="100.0" layoutY="100.0" prefHeight="420.0" prefWidth="520.0" stylesheets="@TableStyle.css">
+         <columns>
+            <TableColumn fx:id="dateColumn" prefWidth="267.0" resizable="false" text="Date" />
+            <TableColumn fx:id="attendanceColumn" prefWidth="252.0" resizable="false" sortable="false" text="Attendance" />
+         </columns>
+      </TableView>
+      <Label layoutX="740.0" layoutY="120.0" text="Total Classes:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="724.0" layoutY="220.0" text="Total Attendance:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="totalClassesField" alignment="CENTER" editable="false" layoutX="742.0" layoutY="160.0" prefHeight="40.0" prefWidth="110.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="totalAttendanceField" alignment="CENTER" editable="false" layoutX="744.0" layoutY="260.0" prefHeight="40.0" prefWidth="110.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="372.0" layoutY="28.0" text="Attendance" textFill="#019094">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="771.0" layoutY="320.0" text="Marks:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="746.0" layoutY="420.0" text="Total Marks:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="marksField" alignment="CENTER" editable="false" layoutX="744.0" layoutY="360.0" prefHeight="40.0" prefWidth="110.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="totalMarksField" alignment="CENTER" editable="false" layoutX="745.0" layoutY="460.0" prefHeight="40.0" prefWidth="110.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="changeButton" buttonType="RAISED" layoutX="866.0" layoutY="465.0" onAction="#changeButtonPushed" prefHeight="30.0" prefWidth="70.0" styleClass="backButton" stylesheets="@TeacherDashboardStyle.css" text="Change">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="errorText" layoutX="688.0" layoutY="510.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="changedText" layoutX="870.0" layoutY="500.0" text="Changed!" textFill="#019094">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

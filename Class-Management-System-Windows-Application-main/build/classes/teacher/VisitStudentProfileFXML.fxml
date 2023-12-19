@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.VisitStudentProfileFXMLController">
+   <children>
+      <Label alignment="CENTER" layoutX="332.0" layoutY="15.0" text="Student Profile" textFill="#019094">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="106.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" editable="false" layoutX="288.0" layoutY="101.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="140.0" layoutY="166.0" text="Institution:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="institutionField" editable="false" layoutX="288.0" layoutY="161.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="120.0" layoutY="226.0" text="Department:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="departmentField" editable="false" layoutX="288.0" layoutY="221.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="219.0" layoutY="309.0" />
+      <Label layoutX="208.0" layoutY="286.0" text="Year:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="semesterField" editable="false" layoutX="638.0" layoutY="281.0" prefHeight="45.0" prefWidth="150.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="128.0" layoutY="406.0" text="Contact No:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="contactNoField" editable="false" layoutX="288.0" layoutY="401.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="yearField" editable="false" layoutX="288.0" layoutY="281.0" prefHeight="45.0" prefWidth="150.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="502.0" layoutY="286.0" text="Semester:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="20.0" layoutY="20.0" onAction="#backButtonPushed" prefHeight="45.0" prefWidth="100.0" styleClass="backButton" stylesheets="@TeacherDashboardStyle.css" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+      <TextField fx:id="sectionField" editable="false" layoutX="288.0" layoutY="341.0" prefHeight="45.0" prefWidth="150.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="idField" editable="false" layoutX="638.0" layoutY="341.0" prefHeight="45.0" prefWidth="150.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="175.0" layoutY="346.0" text="Section:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="485.0" layoutY="346.0" text="Student ID:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailField" editable="false" layoutX="288.0" layoutY="461.0" prefHeight="45.0" prefWidth="500.0" styleClass="textFields" stylesheets="@TeacherDashboardStyle.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="194.0" layoutY="466.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
